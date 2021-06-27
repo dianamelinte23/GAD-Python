@@ -137,3 +137,164 @@
 # print(grocery_list.difference(items))
 # print(items.difference(grocery_list))
 
+""" curs 2"""
+# print('start of program')
+# my_age = input('How old are you?: ')
+# my_age = int(my_age)
+#
+# if my_age < 18:
+#     print('Persoana minora')
+#     if my_age < 14:
+#         print("Persoana nu are buletin")
+# elif my_age < 26:
+#     print("Persoana este student.")
+# else:
+#     print("Persoana nu este student")
+#     if my_age >= 65:
+#         print('Persoana este la pensie')
+#
+# print('end of program')
+
+# my_list = [10, 23, 30, 45, 50]
+# for item in my_list:
+#     if item % 2 == 0:
+#         print('Number %s is even.' % item)
+#         # continue #pass control to the next iteration
+#         break # pass control to the next instruction in the loop
+#     else:
+#         print("Number %s is odd."  % item)
+#     print('end of program')
+
+# list_index = 0
+# while list_index < len(my_list): # list_index = [0,4]
+#     item = my_list[list_index]
+#     list_index += 1
+#     if item % 2 ==0:
+#         print('Number %s is even.' % item)
+#         continue #pass control to the next iteration
+#         #break # pass control to the next instruction in the loop
+#     else:
+#         print('Number %s is odd.' % item)
+
+    # print('end of while loop', item)
+
+# n = int(input('n: '))
+# for i in range(1,n+1):
+#     print('Python is awesome!', i)
+
+# my_list = [3, 5, 8, 10,5]
+#
+# for index, item in list(enumerate(my_list)):
+#     if item % 2 == 0:
+#         print('Even element on index = %s' % index)
+#     else:
+#         print('odd element on index = %s' % index)
+#
+# my_list1 = [[1,2,3], [4,5,6],[7,8,9]]
+# for main_index, list_ in enumerate(my_list1):
+#     for index, element in enumerate(list_):
+#         print(main_index, index, element)
+
+# d = {
+#     'name':'A',
+#     'email': 'B',
+#     'age': 20
+# }
+#
+# for key in d.keys():
+#     print(key, d[key])
+# print('\n')
+# for a in d.values():
+#     print('dict value: ', a)
+# print('\n')
+# for k, v in d.items():
+#     print(k, v)
+# print('\n')
+# for key in d:
+#     print(key, d[key])
+
+# d = {
+#     'Jan': 10,
+#     'Feb': 15,
+#     'Jun': 8
+# } # points = 10 + 15 + 8 = 33
+# m = {'Jan', 'Jul', 'Sep', 'Oct'} # x2 => 20+15+8 => 43
+# my_months = set(d.keys())
+# print('my months', my_months)
+# extra_points = m.intersection(my_months)
+# print('extra points', extra_points)
+
+# Functii
+# def my_function(a, b | c=5):
+# def my_function(a, b, *args, c=5, **kwargs):
+#     print(args, kwargs)
+#     return a+b+c
+#
+# function_result = my_function(10,20,30,40,50, c=60,d = 70, e=80, f=90)
+# print('function result', function_result)
+
+# in python parametrii sunt trimisi prin referinta
+# import copy
+# def my_function(l):
+#     l = copy.deepcopy(l)
+#     # l = l.copy()
+#     print('---> l', l)
+#     l[1].append(6)
+#     print('----> l', l)
+#
+# my_list =[1,[2,3,4],5]
+# my_function(my_list)
+
+# def my_function(l):
+#     def inner_function(item):
+#         print(item ** 2)
+
+#     def inner_function2(item):
+#         print(item*2)
+
+#     for i in l:
+#         if i % 2 == 0:
+#             inner_function(i)
+#         else:
+#             inner_function2(i)
+
+
+# def my_function(a, b):
+#     return a+b
+#
+#
+# my_sum = my_function(5,7)
+# print(my_sum)
+
+# Namespace-uri
+# print(dir(__builtins__))
+# def my_function(a, b):
+#     def inner_func():
+#         my_sum = 20
+#         print('---+---> my_sum', my_sum)
+#     my_sum = a + b
+#     print('my sum', my_sum)
+#     inner_func()
+#     return my_sum
+#
+# my_sum = my_function(5,7) *2
+# print(my_sum)
+
+# Tratarea exceptiilor
+# my_age = input()
+#
+# print(my_age)
+#
+# print('my_age', my_age, type(my_age))
+# try:
+#     my_age = int(my_age)
+#     print('d', d)
+# except (ValueError, NameError) as e:
+#     print('e--->', e)
+# else:
+#     print('else branch was executed')
+# finally:
+#     print('finally branch was executed')
+
+# print(__name__)
+
